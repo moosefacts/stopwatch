@@ -1,22 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Stopwatch from './Stopwatch';
+
 
 function App() {
   return (
-    <div className='flex'>
-      <header className='flex mx-auto justify-center'>
-        <h1 className='flex justify-center place-items-center'>Stopwatch</h1>
-      </header>
-      <body>
-        <div>
-
-        </div>
-        <div>
-          <button className=''>
-            Start
-          </button>
-        </div>
-      </body>
+    <div className='flex flex-col bg-yellow-500 h-screen'>
+      <h1 className='flex mx-auto font-bold text-black text-5xl mt-12'>Stopwatch</h1>
+      <Stopwatch />
     </div>
   );
 }
